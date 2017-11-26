@@ -1,0 +1,13 @@
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\BookAuthor.DL.dll.config
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\BookAuthor.DL.dll
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\BookAuthor.DL.pdb
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\EntityFramework.dll
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\EntityFramework.SqlServer.dll
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\EntityFramework.xml
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\bin\Debug\EntityFramework.SqlServer.xml
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\obj\Debug\BookAuthor.DL.csproj.CoreCompileInputs.cache
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\obj\Debug\BookAuthor.DL.dll
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\obj\Debug\BookAuthor.DL.pdb
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\obj\Debug\BookAuthor.DL.Migrations.InitialCreate.resources
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\obj\Debug\BookAuthor.DL.csproj.GenerateResource.Cache
+H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.DL\obj\Debug\BookAuthor.DL.csprojResolveAssemblyReference.cache

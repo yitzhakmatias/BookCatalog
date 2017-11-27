@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using BookAuthor.CORE;
+using BookAuthor.DL;
 using BookAuthor.Repositories;
 
 namespace BookAuthor.MVCApp.Controllers
@@ -13,10 +15,13 @@ namespace BookAuthor.MVCApp.Controllers
 
         private readonly IBookRepository _bookRepository;
         private readonly IAuthorRepository _authorRepository;
-        public BookApiController(IBookRepository bookRepository, IAuthorRepository authorRepository)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public BookApiController(IBookRepository bookRepository, IAuthorRepository authorRepository, IUnitOfWork unitOfWork)
         {
             _bookRepository = bookRepository;
             _authorRepository = authorRepository;
+            _unitOfWork = unitOfWork;
         }
         [HttpGet]
         // GET api/<controller>
@@ -39,8 +44,16 @@ namespace BookAuthor.MVCApp.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Book book)
         {
+            var data = book;
+
+            if (book!= null)
+            {
+                _bookRepository.Add(book);
+                _unitOfWork.Commit();
+            }
+
         }
 
         // PUT api/<controller>/5

@@ -25,6 +25,7 @@ namespace BookAuthor.DL.Migrations
             {
                 
                 Title = "Test",
+                EditionDate = DateTime.Now,
                 Authors = new List<Author>
                 {
                     new Author() {  Name = "Garcia Marquez" },

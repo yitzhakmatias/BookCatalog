@@ -10,15 +10,20 @@
             <tr>
 
 
-                <th><input type="checkbox" ng-model="model.allItemsSelected" ng-change="selectAll()"></th>
+                <th><input type="checkbox" ng-model="book.allItemsSelected" ng-change="selectAll()"></th>
+                <td>
+                    <b>Id</b>
+                </td>
                 <td>
                     <b>Name</b>
                 </td>
 
             </tr>
-            <tr ng-repeat="author in model.authors">
+            <tr ng-repeat="author in book.authors">
                 <td><input type="checkbox" ng-model="author.isChecked" ng-change="selectEntity()"></td>
-
+                <td>
+                    {{author.Id}}
+                </td>
                 <td>
                     {{author.Name}}
                 </td>
@@ -45,7 +50,9 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label">Edicion:</label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control" id="inputEdition" placeholder="Edition" ng-model="Edition">
+                                <input type="text" class="form-control" datepicker-popup="dd/mm/yyyy" id="inputEdition" placeholder="Edition" ng-model="Edition"
+                                       is-open="opened"
+                                       close-text="Close">
                             </div>
                         </div>
                     </div>
@@ -58,6 +65,6 @@
             </div>
         </div>
     </div>
-    @Html.Hidden("EmpID_")
+    @Html.Hidden("Id")
 
 </div>

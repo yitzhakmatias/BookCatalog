@@ -30,12 +30,12 @@ namespace BookAuthor.MVCApp.Controllers
 
             return Ok(data);
         }
-        [HttpGet]
+        [HttpPost]
         [Route("api/Search/List")]
         // GET api/<controller>
-        public IHttpActionResult Get(JObject filter)
+        public IHttpActionResult Get(JObject book)
         {
-            dynamic jsonData = filter;
+            dynamic jsonData = book;
             JObject orderJson = jsonData.itemDetails;
 
             var data = new List<object>();

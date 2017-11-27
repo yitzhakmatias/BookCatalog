@@ -48,25 +48,40 @@ app.controller("myCtrl", function ($scope, $http) {
         //If not the check the "allItemsSelected" checkbox
         $scope.model.allItemsSelected = true;
     };
+    $scope.SearchData = function () {
+        var Action = document.getElementById("btnSearch").getAttribute("value");
+        if (Action == "Search") {
+          
+            $scope.book.title = $scope.Title;
+            $scope.book.editiondate = $scope.Edition;
+            $scope.book.author = $scope.Author;
 
+          
+            $http({
+                method: "Post",
+                url: "/api/Search/List/",
+                datatype: "json",
+                data: JSON.stringify($scope.book)
+            }).then(function (response) {
+                alert(response.data);
+                $scope.GetAllData();
+                $scope.EmpName = "";
+               
+            });
+        } 
+    } 
 
     $scope.InsertData = function () {
         var Action = document.getElementById("btnSave").getAttribute("value");
         if (Action == "Submit") {
-           // $scope.books = {};
+           
             $scope.book.title = $scope.Title;
             $scope.book.editiondate = Date.now();// $scope.Edition;
 
             $scope.book.authors = $scope.book.authors.filter(function (author) {
                 return (author.isChecked == true);
             });
-
-           /* var promisePost = bookService.postInfo(JSON.stringify($scope.book));
-            promisePost.then(function (d) {
-                $scope.id = d.data.id;
-            }, function (err) {
-                alert("Some Error Occured ");
-            });*/
+          
 
             $http({
                 method: "post",
@@ -80,27 +95,6 @@ app.controller("myCtrl", function ($scope, $http) {
                 $scope.EmpCity = "";
                 $scope.EmpAge = "";
             });
-        } else {
-            $scope.book = {};
-            $scope.book.title = $scope.Title;
-            $scope.book.editiondate = $scope.Edition;
-         
-            $scope.book.id = document.getElementById("EmpID_").value;
-            $http({
-                method: "post",
-                url: "http://localhost:39209/Employee/Update_Employee",
-                datatype: "json",
-                data: JSON.stringify($scope.Employe)
-            }).then(function (response) {
-                alert(response.data);
-                $scope.GetAllData();
-                $scope.EmpName = "";
-                $scope.EmpCity = "";
-                $scope.EmpAge = "";
-                document.getElementById("btnSave").setAttribute("value", "Submit");
-                document.getElementById("btnSave").style.backgroundColor = "cornflowerblue";
-                document.getElementById("spn").innerHTML = "Add New Employee";
-            })
         }
     } 
 

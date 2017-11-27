@@ -67,5 +67,11 @@
       <DependentUpon>201711260224097_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookAuthor.CORE\BookAuthor.CORE.csproj">
+      <Project>{9be10219-aa37-4f07-b166-d4d16027f6d5}</Project>
+      <Name>BookAuthor.CORE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

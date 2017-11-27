@@ -9,3 +9,14 @@ H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.
 H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.csproj.CoreCompileInputs.cache
 H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.dll
 H:\work\BookCatalog\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.pdb
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\BookAuthor.CORE.dll.config
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\BookAuthor.CORE.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\BookAuthor.CORE.pdb
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\EntityFramework.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\EntityFramework.SqlServer.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\EntityFramework.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\bin\Debug\EntityFramework.SqlServer.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.csprojResolveAssemblyReference.cache
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.csproj.CoreCompileInputs.cache
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.CORE\obj\Debug\BookAuthor.CORE.pdb

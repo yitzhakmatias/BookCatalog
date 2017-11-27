@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Web.DynamicData.ModelProviders;
 using System.Web.Http;
+using BookAuthor.DL;
 using BookAuthor.Repositories;
 using Newtonsoft.Json.Linq;
 
@@ -36,13 +39,14 @@ namespace BookAuthor.MVCApp.Controllers
         public IHttpActionResult Get(JObject book)
         {
             dynamic jsonData = book;
-            JObject orderJson = jsonData.itemDetails;
+            var bookData = jsonData.book ;
 
-            var data = new List<object>();
-
-            foreach (var item in _bookRepository.GetAll())
+            List<object> data = new List<object>();
+            string title = bookData.title.ToString();
+            var repo= _bookRepository.GetMany(p => p.Title.Contains(title));
+            foreach (var item in repo)
             {
-                data.Add(new { Id = item.Id, Name = item.Title, Edition = item.EditionDate, Authors = item.Authors.Count });
+                data.Add(new { Id = item.Id, Title = item.Title, Edition = item.EditionDate, Authors = item.Authors.Count });
             }
 
             return Ok(data);

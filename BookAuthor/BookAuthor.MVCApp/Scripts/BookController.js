@@ -51,22 +51,33 @@ app.controller("myCtrl", function ($scope, $http) {
     $scope.SearchData = function () {
         var Action = document.getElementById("btnSearch").getAttribute("value");
         if (Action == "Search") {
-          
+            $scope.book = {};
             $scope.book.title = $scope.Title;
             $scope.book.editiondate = $scope.Edition;
             $scope.book.author = $scope.Author;
 
+
+           /* $.ajax({
+                url: '/api/Search/List/',
+                type: 'POST',
+                data: { book: $scope.book},
+                ContentType: 'application/json;utf-8',
+                datatype: 'json'
+            }).done(function (resp) {
+                $scope.book = {};
+                $scope.book = resp;
+                //alert("Successful " + resp);
+            }).error(function (err) {
+                alert("Error " + err.status);
+            });*/
           
             $http({
-                method: "Post",
+                method: "post",
                 url: "/api/Search/List/",
                 datatype: "json",
-                data: JSON.stringify($scope.book)
+                data: { book: $scope.book }
             }).then(function (response) {
-                alert(response.data);
-                $scope.GetAllData();
-                $scope.EmpName = "";
-               
+                $scope.book = response.data;
             });
         } 
     } 
@@ -91,9 +102,6 @@ app.controller("myCtrl", function ($scope, $http) {
             }).then(function(response) {
                 alert(response.data);
                 $scope.GetAllData();
-                $scope.EmpName = "";
-                $scope.EmpCity = "";
-                $scope.EmpAge = "";
             });
         }
     } 

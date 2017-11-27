@@ -21,3 +21,13 @@ D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Book
 D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\BookAuthor.DL.dll.config
 D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\EntityFramework.xml
 D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Autofac.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Autofac.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Autofac.Integration.WebApi.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Newtonsoft.Json.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\System.Net.Http.Formatting.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\System.Web.Http.dll
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Autofac.Integration.WebApi.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\Newtonsoft.Json.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\System.Net.Http.Formatting.xml
+D:\work\BookAuthor\BookCatalog\BookAuthor\BookAuthor.Repositories\bin\Debug\System.Web.Http.xml

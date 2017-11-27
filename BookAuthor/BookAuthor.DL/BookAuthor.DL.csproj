@@ -51,9 +51,9 @@
     <Compile Include="Author.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="BookContext.cs" />
-    <Compile Include="Migrations\201711260224097_InitialCreate.cs" />
-    <Compile Include="Migrations\201711260224097_InitialCreate.Designer.cs">
-      <DependentUpon>201711260224097_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201711271602121_InitialCatalog.cs" />
+    <Compile Include="Migrations\201711271602121_InitialCatalog.Designer.cs">
+      <DependentUpon>201711271602121_InitialCatalog.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,15 +63,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711260224097_InitialCreate.resx">
-      <DependentUpon>201711260224097_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BookAuthor.CORE\BookAuthor.CORE.csproj">
       <Project>{9be10219-aa37-4f07-b166-d4d16027f6d5}</Project>
       <Name>BookAuthor.CORE</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711271602121_InitialCatalog.resx">
+      <DependentUpon>201711271602121_InitialCatalog.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

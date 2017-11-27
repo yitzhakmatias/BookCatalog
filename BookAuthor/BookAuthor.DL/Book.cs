@@ -9,7 +9,7 @@ namespace BookAuthor.DL
         [Required]
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime EditionDate { get; set; }
+        public DateTime ? EditionDate { get; set; }
         public virtual ICollection<Author> Authors { get; set; }
     }
 }

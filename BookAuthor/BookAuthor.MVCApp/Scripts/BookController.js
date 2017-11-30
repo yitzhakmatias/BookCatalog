@@ -54,22 +54,7 @@ app.controller("myCtrl", function ($scope, $http) {
             $scope.book = {};
             $scope.book.title = $scope.Title;
             $scope.book.editiondate = $scope.Edition;
-            $scope.book.author = $scope.Author;
-
-
-           /* $.ajax({
-                url: '/api/Search/List/',
-                type: 'POST',
-                data: { book: $scope.book},
-                ContentType: 'application/json;utf-8',
-                datatype: 'json'
-            }).done(function (resp) {
-                $scope.book = {};
-                $scope.book = resp;
-                //alert("Successful " + resp);
-            }).error(function (err) {
-                alert("Error " + err.status);
-            });*/
+            $scope.book.author = $scope.Author;       
           
             $http({
                 method: "post",

@@ -43,6 +43,7 @@ namespace BookAuthor.MVCApp.Controllers
 
             List<object> data = new List<object>();
             string title = bookData.title.ToString();
+          
             var repo= _bookRepository.GetMany(p => p.Title.Contains(title));
             foreach (var item in repo)
             {
